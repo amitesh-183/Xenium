@@ -1,0 +1,19 @@
+.hero-bg {
+  background-image: url("./assets/heroBg1.webp");
+  background-size: 99.6vw 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-shadow {
+  text-shadow: 1px 2px black;
+}
+
+.head-title-shadow {
+  text-shadow: 3px 2px 2px yellow;
+}
+
+.filter-join {
+  /* filter: blur(2px); */
+  filter: opacity(0.4);
+}
