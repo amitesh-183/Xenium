@@ -10,7 +10,7 @@ export default function Apps() {
     <div id="apps" className="pt-12 lg:pt-24">
       <h1 className="sec-title text-center">Apps</h1>
 
-      <div className="flex flex-col lg:flex-row gap-10 items-center justify-center px-4 lg:px-20">
+      <div className="flex flex-col lg:flex-row lg:gap-32 gap-10 items-center justify-center px-4 lg:px-20">
         <div className="mb-8 lg:mb-0">
           <div className={service.card}>
             <img className={service.image} src={service1} alt="services" />

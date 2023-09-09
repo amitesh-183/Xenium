@@ -35,7 +35,20 @@ const Token = () => {
           breakpoint: 425, // Adjust the breakpoint as needed
           options: {
             chart: {
+              width: "400", // Reduce the chart width at this breakpoint
+            },
+            legend: {
+              position: "bottom",
+            },
+          },
+        },
+        {
+          breakpoint: 375, // Adjust the breakpoint as needed
+          options: {
+            chart: {
               width: "300", // Reduce the chart width at this breakpoint
+              height: "800",
+              padding: "0 40px",
             },
             legend: {
               position: "bottom",

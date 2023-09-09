@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div>
-      <div className=" flex lg:flex-row flex-col justify-between items-center py-7 lg:px-14 px-4 text-center bg-black text-white">
+      <div className=" flex lg:flex-row flex-col justify-between items-center py-7 lg:px-40 px-4 text-center bg-black text-white">
         <div className=" py-5">
           Copyright © 2022 Xenium. All rights reserved.
         </div>

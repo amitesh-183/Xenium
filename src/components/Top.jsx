@@ -40,9 +40,12 @@ export default function Top() {
 
   return (
     <div
-      className={`fixed z-50 right-0 bottom-12 hover:bg-red-500 duration-300 ease-in-out font-black text-xl bg-highlight px-6 mr-10 mb-6 py-6 rounded-full ${
-        showTopButton ? "block" : "hidden"
-      }`}
+      className={`fixed z-50 right-0 bottom-12 duration-300 ease-in-out font-black text-xl bg-highlight rounded-full hover:bg-red-500 
+      px-6 py-6 ${showTopButton ? "block" : "hidden"} 
+      sm:right-4 sm:bottom-4 sm:px-4 sm:py-4 
+      md:right-8 md:bottom-8 md:px-5 md:py-5 
+      lg:right-10 lg:bottom-10 lg:px-6 lg:py-6 
+      xl:right-12 xl:bottom-12 xl:px-7 xl:py-7`}
       onClick={scrollToTop}
     >
       <BsArrowUp />

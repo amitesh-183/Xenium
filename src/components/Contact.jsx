@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div id="contact" className="py-12 lg:py-24">
       <h1 className="sec-title text-center">Contact</h1>
-      <div className="flex flex-col lg:flex-row items-center lg:justify-between px-4 lg:px-32">
+      <div className="flex flex-col lg:flex-row items-center lg:justify-between px-4 lg:px-36">
         <div className="mb-6 lg:mb-0">
           <img src={contact} className="rounded-md" width="600" alt="" />
         </div>

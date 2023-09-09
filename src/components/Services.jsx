@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <div id="services" className="pt-12 lg:pt-24">
       <h1 className="sec-title">Services</h1>
-      <p className=" text-center px-4 lg:px-80">
+      <p className=" pb-10 text-center px-4 lg:px-80">
         Welcome to Xenium, your one-stop destination for cutting-edge crypto and
         fantasy league solutions. Our expert team is passionate about bringing
         innovation to the world of cryptocurrencies and fantasy sports. Explore
@@ -69,7 +69,7 @@ export default function Services() {
                 using cryptocurrencies.
               </p>
             </div>
-            <div className={services.service}>
+            {/* <div className={services.service}>
               <i className="ri-hand-coin-line" />
               <h3>Blockchain Development</h3>
               <p>
@@ -86,7 +86,7 @@ export default function Services() {
                 experts provide consultation services to help you navigate
                 crypto investments and projects.
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>

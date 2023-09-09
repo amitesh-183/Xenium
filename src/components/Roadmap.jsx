@@ -2,7 +2,7 @@ import roadmap from "../styles/roadmap.module.css"; // Import the CSS module
 
 export default function Roadmap() {
   return (
-    <div className="py-10">
+    <div className="py-10 lg:px-52 px-10">
       <div className={roadmap.container}>
         <div className={roadmap["roadmap-wrapper"]}>
           <div className={roadmap.row}>
