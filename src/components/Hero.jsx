@@ -1,15 +1,21 @@
-import heroImg from "../assets/herobg.webp";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 export default function Hero() {
+  const scrollDownABit = () => {
+    window.scrollBy({
+      top: 800, // Adjust this value to control how much you want to scroll down
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className="">
-      <div className=" h-[110vh] pt-16 hero-bg w-full pb-32 flex justify-between items-center gap-20 px-20">
-        <div className="cathy-text text-center">
-          <h2 className=" text-6xl font-black py-6 px-18">
-            Unleash the Power of Apps Join our community and experience the best
-            in app services.
+    <div className="bg-hero-pattern hero-bg pt-40 bg-cover bg-center bg-fixed">
+      <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-screen-lg mx-auto text-center">
+          <h2 className="text-4xl md:text-6xl font-black mb-6">
+            Unleash the Power of Apps <br />
+            Join our community & experience <br /> the best in app services.
           </h2>
-          <p className="pb-8 text-gray-200 text-xl px-20">
+          <p className="text-gray-200 text-lg md:text-xl mb-8 px-4 md:px-48">
             Our platform offers a wide range of app services to meet your every
             need. Whether you’re looking to join a fantasy league, trade crypto,
             or explore other exciting options, we’ve got you covered. Our
@@ -17,12 +23,21 @@ export default function Hero() {
             seamless and safe experience. Join our community today and discover
             the power of our app services.
           </p>
-          <button className=" me-5 bg-highlight">Join Now</button>
-          <button>Learn More</button>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <button className="bg-highlight text-white text-lg md:text-xl px-6 py-3 md:px-10 md:py-4 rounded-lg shadow-md hover:bg-highlight-dark transition duration-300">
+              Join Now
+            </button>
+            <button
+              className="text-gray-500 text-lg md:text-xl px-6 py-3 md:px-10 md:py-4 rounded-lg border border-gray-500 hover:border-transparent hover:bg-gray-800 hover:text-white transition duration-300 mt-2 md:mt-0"
+              onClick={scrollDownABit}
+            >
+              Learn More
+            </button>
+          </div>
+          <div className="flex justify-center text-3xl pt-8 md:pt-16 animate-bounce">
+            <BsChevronDoubleDown />
+          </div>
         </div>
-        {/* <div className="w-[50%]">
-          <img src={heroImg} className=" w-[560px] ml-24 rounded" alt="Tech" />
-        </div> */}
       </div>
     </div>
   );

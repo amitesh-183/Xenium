@@ -17,3 +17,38 @@
   /* filter: blur(2px); */
   filter: opacity(0.4);
 }
+
+.sec-title {
+  text-align: center;
+  position: relative;
+  width: auto;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 40px; /* Reduce the margin for smaller devices */
+  font-size: 3rem; /* Adjust the font size for smaller devices */
+}
+
+.sec-title:after {
+  position: absolute;
+  content: "";
+  width: 30px; /* Adjust the width for the underline */
+  height: 3px; /* Adjust the height for the underline */
+  background: linear-gradient(to right, #973ef1, #3b37f9);
+  bottom: -10px; /* Adjust the distance from the text for the underline */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Media Query for Smaller Devices */
+@media screen and (max-width: 768px) {
+  .sec-title {
+    font-size: 3rem; /* Further reduce the font size for smaller screens */
+    margin-bottom: 20px; /* Reduce the margin even more */
+  }
+
+  .sec-title:after {
+    width: 20px; /* Adjust the width for the underline */
+    height: 2px; /* Adjust the height for the underline */
+    bottom: -5px; /* Adjust the distance from the text for the underline */
+  }
+}

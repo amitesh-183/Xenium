@@ -6,7 +6,7 @@ const Token = () => {
     series: [20, 10, 7, 10, 10, 10, 10, 23],
     options: {
       chart: {
-        width: 380,
+        width: "100%", // Set the chart width to 100% for responsiveness
         type: "pie",
       },
       labels: [
@@ -21,10 +21,21 @@ const Token = () => {
       ],
       responsive: [
         {
-          breakpoint: 480,
+          breakpoint: 768, // Adjust the breakpoint as needed
           options: {
             chart: {
-              width: 600,
+              width: "400", // Reduce the chart width at this breakpoint
+            },
+            legend: {
+              position: "bottom",
+            },
+          },
+        },
+        {
+          breakpoint: 425, // Adjust the breakpoint as needed
+          options: {
+            chart: {
+              width: "300", // Reduce the chart width at this breakpoint
             },
             legend: {
               position: "bottom",
@@ -33,9 +44,9 @@ const Token = () => {
         },
       ],
       legend: {
-        position: "bottom", // Change the legend position to 'bottom'
-        horizontalAlign: "center", // Center align the legend
-        fontSize: "14px", // Adjust the font size
+        position: "bottom",
+        horizontalAlign: "center",
+        fontSize: "14px",
         labels: {
           colors: [
             "#fff",
@@ -46,23 +57,21 @@ const Token = () => {
             "#fff",
             "#fff",
             "#fff",
-          ], // Change the legend text color to white
+          ],
         },
       },
     },
   });
 
   return (
-    <div className="h-[100vh]">
-      <h1 className="text-center py-16 bg-gradient-to-bl from-fuchsia-500 via-violet-600 to-pink-500 bg-clip-text text-transparent font-black">
-        Tokens Distributions
-      </h1>
+    <div className="py-10 md:py-20">
+      <h1 className="sec-title">Tokens Distributions</h1>
       <div id="chart" className="flex justify-center">
         <ReactApexChart
           options={chartData.options}
           series={chartData.series}
           type="pie"
-          width={700}
+          width="700" // Set the chart width to 100% for responsiveness
         />
       </div>
     </div>
@@ -70,14 +79,3 @@ const Token = () => {
 };
 
 export default Token;
-
-// const data = [
-//   { title: "Treasury", value: 20, color: "#E38627" },
-//   { title: "ico", value: 10, color: "#C13C37" },
-//   { title: "Team", value: 7, color: "#6A2135" },
-//   { title: "Advisor", value: 10, color: "#6A2135" },
-//   { title: "Developer", value: 10, color: "#6A2135" },
-//   { title: "Promotion", value: 10, color: "#6A2135" },
-//   { title: "Airdrop", value: 10, color: "#6A2135" },
-//   { title: "Backup", value: 23, color: "#6A2135" },
-// ];

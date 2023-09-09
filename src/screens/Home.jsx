@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import Join from "../components/Join";
 import Navbar from "../components/Navbar";
 import PreFooter from "../components/PreFooter";
+import Roadmap from "../components/Roadmap";
 import Services from "../components/Services";
 import Token from "../components/Token";
 import Top from "../components/Top";
@@ -21,6 +22,8 @@ export default function Home() {
       <Hero />
       {/* Token-section */}
       <Token />
+      {/* Roadmap-section */}
+      <Roadmap />
       {/* Apps-section */}
       <Apps />
       {/* Services-section */}

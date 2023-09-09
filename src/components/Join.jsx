@@ -1,22 +1,35 @@
+import React from "react";
 import join from "../assets/join.webp";
+
+const backgroundStyle = {
+  backgroundImage: `url(${join})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+};
+
 export default function Join() {
   return (
-    <div id="join" className="h-[100vh] relative text-black">
-      <img
-        src={join}
-        className=" absolute -z-40 h-[80vh] w-[100vw] filter-join"
-        alt=""
-      />
-      <h1 className="text-center py-6 font-black bg-gradient-to-bl from-fuchsia-500 via-violet-600 to-pink-500 bg-clip-text text-transparent">
-        Join Our Community
-      </h1>
-      <div className="mt-80 text-center text-shadow text-white font-bold text-2xl">
-        <p>
+    <div
+      id="join"
+      className="relative h-[40vh] overflow-hidden text-white"
+      style={backgroundStyle}
+    >
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative z-10 flex flex-col items-center justify-center h-full">
+        <h1 className="sec-title text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-8 text-shadow">
+          Join Our Community
+        </h1>
+        <p className="text-lg sm:text-xl md:text-2xl text-center mb-6 text-shadow">
           Become a part of our vibrant community and unlock exclusive benefits.
         </p>
-        <div className="join-buttons text-white py-6">
-          <button className=" me-5 bg-highlight">Join Now</button>
-          <button>Learn More</button>
+        <div className="join-buttons flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 text-center">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300 ease-in-out">
+            Join Now
+          </button>
+          <button className="bg-gray-800 hover:bg-gray-900 text-white py-2 px-4 rounded-md transition duration-300 ease-in-out">
+            Learn More
+          </button>
         </div>
       </div>
     </div>

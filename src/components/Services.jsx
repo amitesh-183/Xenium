@@ -1,12 +1,11 @@
+import React from "react";
 import services from "../styles/services.module.css";
 
 export default function Services() {
   return (
-    <div id="services" className=" px-28 h-[100vh] pt-16">
-      <h1 className="text-center py-6 font-black bg-gradient-to-bl from-fuchsia-500 via-violet-600 to-pink-500 bg-clip-text text-transparent">
-        Services
-      </h1>
-      <p className="py-4 text-center px-20">
+    <div id="services" className="pt-12 lg:pt-24">
+      <h1 className="sec-title">Services</h1>
+      <p className=" text-center px-4 lg:px-80">
         Welcome to Xenium, your one-stop destination for cutting-edge crypto and
         fantasy league solutions. Our expert team is passionate about bringing
         innovation to the world of cryptocurrencies and fantasy sports. Explore
@@ -14,7 +13,6 @@ export default function Services() {
       </p>
       <div>
         <section className={services.container}>
-          {/* <h2>Our Sevices</h2> */}
           <div className={services.row}>
             <div className={services.service}>
               <i className="ri-wallet-fill"></i>

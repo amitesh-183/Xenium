@@ -1,30 +1,111 @@
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  useEffect(() => {
+    // Function to handle scroll event
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    // Attach the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const navbarClass = `bg-black fixed z-50 top-0 left-0 w-full px-4 py-2 md:px-20 md:py-6 ${
+    isSticky ? "md:py-3" : ""
+  }`;
+
   return (
     <div id="home">
-      <div className=" bg-black fixed z-50 top-0 left-0 w-full flex justify-between items-center px-20 py-4">
-        <div className="logo">
-          <h1 className=" font-bold text-3xl">
-            <Link to="/">Xenium</Link>
-          </h1>
+      <nav className={navbarClass}>
+        <div className="flex justify-between items-center">
+          <div className="logo">
+            <h1 className="font-bold text-3xl">
+              <Link to="/">Xenium</Link>
+            </h1>
+          </div>
+          <div className="md:flex hidden">
+            <ul className="nav flex gap-8 uppercase">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#apps">Apps</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div className="md:flex hidden">
+            <button className="bg-highlight">Join Now</button>
+          </div>
+          <div className="md:hidden">
+            <button
+              onClick={toggleMobileMenu}
+              className="bg-highlight p-2 rounded-lg"
+            >
+              <svg
+                className="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <ul className="nav flex gap-8 uppercase">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#apps">Apps</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#contact">Contact Us</a>
-          </li>
-        </ul>
-        <button className=" bg-highlight">Join Now</button>
-      </div>
+        {isMobileMenuOpen && (
+          <div className="md:hidden">
+            <ul className="nav flex flex-col gap-4 text-center uppercase mt-4">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#apps">Apps</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#contact">Contact Us</a>
+              </li>
+              <li>
+                <button className="bg-highlight text-white py-2 px-4 rounded-full">
+                  Join Now
+                </button>
+              </li>
+            </ul>
+          </div>
+        )}
+      </nav>
     </div>
   );
 }

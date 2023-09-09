@@ -1,3 +1,4 @@
+import React from "react";
 import service from "../styles/app.module.css";
 import service1 from "../assets/services/games.webp";
 import service2 from "../assets/services/crypto.webp";
@@ -6,24 +7,22 @@ import Button from "./Button";
 
 export default function Apps() {
   return (
-    <div id="apps" className="h-[100vh] pt-16">
-      <h1 className="text-center py-16 font-black bg-gradient-to-bl from-fuchsia-500 via-violet-600 to-pink-500 bg-clip-text text-transparent">
-        Apps
-      </h1>
+    <div id="apps" className="pt-12 lg:pt-24">
+      <h1 className="sec-title text-center">Apps</h1>
 
-      <div className="flex justify-evenly px-20">
-        <div>
+      <div className="flex flex-col lg:flex-row gap-10 items-center justify-center px-4 lg:px-20">
+        <div className="mb-8 lg:mb-0">
           <div className={service.card}>
             <img className={service.image} src={service1} alt="services" />
             <p className={service.numberH1}>01</p>
             <p className={service.h1}> Fantasy League App </p>
             <p className={service.p}>
               Engage in fantasy sports, create dream teams, and compete for cash
-              prizes with our easy-to-use app.
+              prizes with our easy-to-use.
             </p>
           </div>
         </div>
-        <div>
+        <div className="mb-8 lg:mb-0">
           <div className={service.card}>
             <img className={service.image} src={service2} alt="services" />
             <p className={service.numberH1}>02</p>
@@ -46,7 +45,7 @@ export default function Apps() {
           </div>
         </div>
       </div>
-      <div className=" flex justify-center py-16">
+      <div className="py-8 lg:py-16 flex justify-center text-center">
         <Button message="Coming Soon - Stay Tuned!" />
       </div>
     </div>

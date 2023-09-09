@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,7 @@
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-family: "Signika Negative", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   scroll-behavior: smooth;
   line-height: 1.5;
   font-weight: 400;
@@ -24,7 +27,7 @@
 
   /* color-scheme */
 
-  --background-color: #451952;
+  --background-color: #0c001c;
   --header-color: #f7fff7ff;
   --accent-color: #4ecdc4ff;
   --highlight-color: #ff6b6bff;
