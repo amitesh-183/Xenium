@@ -7,7 +7,9 @@ export default function Join() {
         className=" absolute -z-40 h-[80vh] w-[100vw] filter-join"
         alt=""
       />
-      <h1 className="text-center py-6 ">Join Our Community</h1>
+      <h1 className="text-center py-6 font-black bg-gradient-to-bl from-fuchsia-500 via-violet-600 to-pink-500 bg-clip-text text-transparent">
+        Join Our Community
+      </h1>
       <div className="mt-80 text-center text-shadow text-white font-bold text-2xl">
         <p>
           Become a part of our vibrant community and unlock exclusive benefits.

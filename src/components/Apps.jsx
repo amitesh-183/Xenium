@@ -7,7 +7,9 @@ import Button from "./Button";
 export default function Apps() {
   return (
     <div id="apps" className="h-[100vh] pt-16">
-      <h1 className="text-center py-16">Apps</h1>
+      <h1 className="text-center py-16 font-black bg-gradient-to-bl from-fuchsia-500 via-violet-600 to-pink-500 bg-clip-text text-transparent">
+        Apps
+      </h1>
 
       <div className="flex justify-evenly px-20">
         <div>

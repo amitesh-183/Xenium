@@ -54,17 +54,18 @@ const Token = () => {
 
   return (
     <div className="h-[100vh]">
-      
-        <h1 className="text-center py-16">Tokens Distributions</h1>
-        <div id="chart" className="flex justify-center">
-          <ReactApexChart
-            options={chartData.options}
-            series={chartData.series}
-            type="pie"
-            width={700}
-          />
-        </div>
+      <h1 className="text-center py-16 bg-gradient-to-bl from-fuchsia-500 via-violet-600 to-pink-500 bg-clip-text text-transparent font-black">
+        Tokens Distributions
+      </h1>
+      <div id="chart" className="flex justify-center">
+        <ReactApexChart
+          options={chartData.options}
+          series={chartData.series}
+          type="pie"
+          width={700}
+        />
       </div>
+    </div>
   );
 };
 

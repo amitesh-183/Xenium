@@ -5,7 +5,9 @@ import form from "../styles/form.module.css";
 export default function Contact() {
   return (
     <div id="contact" className="h-[100vh] pt-16">
-      <h1 className="text-center py-16">Contact</h1>
+      <h1 className="text-center py-16 font-black bg-gradient-to-bl from-fuchsia-500 via-violet-600 to-pink-500 bg-clip-text text-transparent">
+        Contact
+      </h1>
       <div className="flex justify-between px-32">
         <div>
           <img src={contact} className=" rounded-md" width="600" alt="" />
