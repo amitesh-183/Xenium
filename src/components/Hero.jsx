@@ -1,40 +1,61 @@
+import React, { useEffect } from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import vid from "../assets/herovbg.mp4";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 export default function Hero() {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   const scrollDownABit = () => {
     window.scrollBy({
-      top: 800, // Adjust this value to control how much you want to scroll down
+      top: 900, // Adjust this value to control how much you want to scroll down
       behavior: "smooth",
     });
   };
+
   return (
-    <div className="bg-hero-pattern hero-bg lg:py-36 py-36 bg-cover bg-center bg-fixed">
-      <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-screen-lg mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-black mb-6">
+    <div className="hero-container lg:py-36 py-24 overflow-hidden relative">
+      {/* Video background */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="fixed hidden md:block inset-0 w-full h-[100vh] object-cover -z-10"
+      >
+        <source src={vid} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Content */}
+      <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 relative z-10">
+        <div
+          className="max-w-screen-lg mx-auto text-center sticky"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h2 className="text-2xl md:text-4xl lg:text-6xl font-black mb-6">
             Unleash the Power of Apps <br />
             Join our community & experience <br /> the best in app services.
           </h2>
-          <p className="text-gray-200 text-lg md:text-xl mb-8 px-4 md:px-4">
-            Our platform offers a wide range of app services to meet your every
-            need. Whether you’re looking to join a fantasy league, trade crypto,
-            or explore other exciting options, we’ve got you covered. Our
-            user-friendly interface and top-notch security measures ensure a
-            seamless and safe experience. Join our community today and discover
-            the power of our app services.
-          </p>
-          <div className="flex md:flex-row items-center justify-center gap-4">
-            <button className="bg-highlight text-white text-lg md:text-xl px-6 py-3 md:px-10 md:py-4 rounded-lg shadow-md hover:bg-highlight-dark transition duration-300">
+          <div
+            className="flex flex-col md:flex-row items-center justify-center gap-4"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <button className="bg-highlight text-white text-base md:text-xl px-6 py-3 md:px-10 md:py-4 rounded-lg shadow-md hover:bg-highlight-dark transition duration-300">
               Join Now
             </button>
             <button
-              className="text-gray-500 text-lg md:text-xl px-6 py-3 md:px-10 md:py-4 rounded-lg border border-gray-500 hover:border-transparent hover:bg-gray-800 hover:text-white transition duration-300 mt-2 md:mt-0"
+              className="text-gray-500 text-base md:text-xl px-6 py-3 md:px-10 md:py-4 rounded-lg border border-gray-500 hover:border-transparent hover:bg-gray-800 hover:text-white transition duration-300 mt-2 md:mt-0"
               onClick={scrollDownABit}
             >
               Learn More
             </button>
           </div>
-          <div className="flex justify-center text-3xl pt-8 md:pt-16 animate-bounce">
+          <div className="flex justify-center text-2xl md:text-3xl pt-8 md:pt-16 animate-bounce">
             <BsChevronDoubleDown />
           </div>
         </div>

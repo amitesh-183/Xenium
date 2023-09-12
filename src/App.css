@@ -1,8 +1,14 @@
 .hero-bg {
-  background-image: url("./assets/heroBg1.webp");
+  background-image: url("./assets/herovbg.mp4");
   background-size: 99.6vw 90vh;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.bg-pre {
+  background-image: url("./assets/presale.jpg");
+  background-size: cover;
+  
 }
 
 .text-shadow {

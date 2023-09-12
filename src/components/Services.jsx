@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import services from "../styles/services.module.css";
-
+import AOS from "aos";
 export default function Services() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Specify the duration of the animation (in milliseconds)
+      offset: 200, // Offset (in pixels) from the bottom of the viewport to trigger the animation
+    });
+  }, []);
   return (
-    <div id="services" className="pt-12 lg:pt-24">
+    <div id="services" className="py-12 bg-[#0C134F] lg:pt-24">
       <h1 className="sec-title">Services</h1>
-      <p className=" pb-10 text-center px-4 lg:px-80">
+      <p
+        className=" pb-10 text-center text-2xl px-4 lg:px-80"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+      >
         Welcome to Xenium, your one-stop destination for cutting-edge crypto and
         fantasy league solutions. Our expert team is passionate about bringing
         innovation to the world of cryptocurrencies and fantasy sports. Explore
@@ -14,7 +24,7 @@ export default function Services() {
       <div>
         <section className={services.container}>
           <div className={services.row}>
-            <div className={services.service}>
+            <div className={services.service} data-aos="flip-up">
               <i className="ri-wallet-fill"></i>
               <h3>Crypto Wallet Development</h3>
               <p>
@@ -24,7 +34,7 @@ export default function Services() {
                 assets.
               </p>
             </div>
-            <div className={services.service}>
+            <div className={services.service} data-aos="flip-down">
               <i className="ri-store-3-line" />
               <h3>Fantasy League Platforms</h3>
               <p>
@@ -33,7 +43,7 @@ export default function Services() {
                 gameplay, real-time stats, and interactive features.
               </p>
             </div>
-            <div className={services.service}>
+            <div className={services.service} data-aos="flip-up">
               <i className="ri-bit-coin-line" />
               <h3>Cryptocurrency Exchanges</h3>
               <p>
@@ -42,7 +52,7 @@ export default function Services() {
                 that enables seamless trading.
               </p>
             </div>
-            <div className={services.service}>
+            <div className={services.service} data-aos="flip-down">
               <i className="ri-instance-fill" />
               <h3>NFT Marketplace</h3>
               <p>
@@ -51,7 +61,7 @@ export default function Services() {
                 selling, and trading non-fungible tokens.
               </p>
             </div>
-            <div className={services.service}>
+            <div className={services.service} data-aos="flip-up">
               <i className="ri-apps-fill" />
               <h3>Fantasy League Apps</h3>
               <p>
@@ -60,7 +70,7 @@ export default function Services() {
                 an unparalleled user experience.
               </p>
             </div>
-            <div className={services.service}>
+            <div className={services.service} data-aos="flip-down">
               <i className="ri-secure-payment-fill"></i>
               <h3>Crypto Payment Solutions</h3>
               <p>

@@ -88,7 +88,7 @@ export default function Privacy() {
             href="mailto:support@ourwebsite.com"
             className="text-highlight hover:underline"
           >
-            support@ourwebsite.com
+            support@xenium.com
           </a>
           .
         </p>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -28,7 +28,7 @@ export default function Navbar() {
     };
   }, []);
 
-  const navbarClass = `bg-black fixed z-50 top-0 left-0 w-full px-4 py-2 md:px-20 md:py-6 ${
+  const navbarClass = `bg-black fixed z-50 top-0 left-0 w-full px-4 py-2 md:px-20 ${
     isSticky ? "md:py-3" : ""
   }`;
 
@@ -47,7 +47,7 @@ export default function Navbar() {
                 <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#apps">Apps</a>
+                <a href="#roadmap">Roadmap</a>
               </li>
               <li>
                 <a href="#services">Services</a>
@@ -83,13 +83,15 @@ export default function Navbar() {
           </div>
         </div>
         {isMobileMenuOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden w-fit max-w-screen-sm">
+            {" "}
+            {/* Adjust max-width here */}
             <ul className="nav flex flex-col gap-4 text-center uppercase mt-4">
               <li>
                 <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#apps">Apps</a>
+                <a href="#roadmap">Roadmap</a>
               </li>
               <li>
                 <a href="#services">Services</a>

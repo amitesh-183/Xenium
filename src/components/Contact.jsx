@@ -4,7 +4,7 @@ import form from "../styles/form.module.css";
 
 export default function Contact() {
   return (
-    <div id="contact" className="py-12 lg:py-24">
+    <div id="contact" className="py-12 lg:py-24 bg-[#0C134F]">
       <h1 className="sec-title text-center">Contact</h1>
       <div className="flex flex-col lg:flex-row items-center lg:justify-between px-4 lg:px-36">
         <div className="mb-6 lg:mb-0">

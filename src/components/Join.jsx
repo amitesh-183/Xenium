@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import join from "../assets/join.webp";
-
+import AOS from "aos";
 const backgroundStyle = {
   backgroundImage: `url(${join})`,
   backgroundSize: "cover",
@@ -9,6 +9,12 @@ const backgroundStyle = {
 };
 
 export default function Join() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // Specify the duration of the animation (in milliseconds)
+      offset: 200, // Offset (in pixels) from the bottom of the viewport to trigger the animation
+    });
+  }, []);
   return (
     <div
       id="join"
@@ -16,7 +22,10 @@ export default function Join() {
       style={backgroundStyle}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center h-full">
+      <div
+        className="relative z-10 flex flex-col items-center justify-center h-full"
+        data-aos="fade-up"
+      >
         <h1 className="sec-title text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-8 text-shadow">
           Join Our Community
         </h1>

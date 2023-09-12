@@ -1,4 +1,4 @@
-import Apps from "../components/Apps";
+import Apps from "../components/Sale";
 import Banner from "../components/Banner";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -10,12 +10,13 @@ import Roadmap from "../components/Roadmap";
 import Services from "../components/Services";
 import Token from "../components/Token";
 import Top from "../components/Top";
+import Sale from "../components/Sale";
 
 export default function Home() {
   return (
     <div>
       <Top />
-      {/* <Banner /> */}
+      <Banner />
       {/* Navbar-section */}
       <Navbar />
       {/* Hero-section */}
@@ -24,10 +25,10 @@ export default function Home() {
       <Token />
       {/* Roadmap-section */}
       <Roadmap />
-      {/* Apps-section */}
-      <Apps />
       {/* Services-section */}
       <Services />
+      {/* Sale-section */}
+      <Sale />
       {/* Contact-section */}
       <Contact />
       {/* Join-section */}
