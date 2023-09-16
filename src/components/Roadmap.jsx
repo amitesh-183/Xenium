@@ -16,7 +16,7 @@ export default function Roadmap() {
       <div className="flex flex-col md:flex-row relative justify-center items-center gap-8 my-8 md:my-16">
         <div
           className="absolute top-0 left-0 rounded-full border-2 border-highlight px-2"
-          data-aos="zoom-in-right"
+          data-aos="zoom-in-up"
         >
           1
         </div>
@@ -37,7 +37,7 @@ export default function Roadmap() {
       <div className="flex flex-col-reverse md:flex-row relative justify-center items-center gap-8 my-8 md:my-16">
         <div
           className="absolute top-0 right-0 rounded-full border-2 border-highlight px-2"
-          data-aos="zoom-in-left"
+          data-aos="zoom-in-up"
         >
           2
         </div>
@@ -58,13 +58,13 @@ export default function Roadmap() {
       <div className="flex flex-col md:flex-row relative justify-center items-center gap-8 my-8 md:my-16">
         <div
           className="absolute top-0 left-0 rounded-full border-2 border-highlight px-2"
-          data-aos="zoom-in-right"
+          data-aos="zoom-in-up"
         >
           3
         </div>
         <div
           className="border-4 rounded-full h-[268px] pt-4 md:mr-8"
-          data-aos="zoom-in-right"
+          data-aos="zoom-in-down"
         >
           <img src={service3} className="w-[260px] md:w-[600px]" alt="" />
         </div>

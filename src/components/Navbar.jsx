@@ -9,31 +9,30 @@ export default function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  useEffect(() => {
-    // Function to handle scroll event
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
+  // useEffect(() => {
+  //   // Function to handle scroll event
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 100) {
+  //       setIsSticky(true);
+  //     } else {
+  //       setIsSticky(false);
+  //     }
+  //   };
 
-    // Attach the event listener
-    window.addEventListener("scroll", handleScroll);
+  //   // Attach the event listener
+  //   window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   // Clean up the event listener when the component unmounts
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
-  const navbarClass = `bg-black fixed z-50 top-0 left-0 w-full px-4 py-2 md:px-20 
-  ${isSticky ? "md:py-3" : "py-6"}
+  const navbarClass = `bg-black fixed z-50 top-0 mx-auto w-full px-4 py-4 md:px-20 
   `;
 
   return (
-    <div id="home">
+    <div id="home relative">
       <nav className={navbarClass}>
         <div className="flex justify-between items-center">
           <div className="logo">
@@ -83,10 +82,10 @@ export default function Navbar() {
           </div>
         </div>
         {isMobileMenuOpen && (
-          <div className="md:hidden w-fit max-w-screen-sm">
+          <div className="md:hidden w-full">
             {" "}
             {/* Adjust max-width here */}
-            <ul className="nav flex flex-col gap-4 text-center uppercase mt-4">
+            <ul className="nav flex justify-center items-center flex-col gap-4 text-center uppercase mt-4">
               <li>
                 <a href="#home">Home</a>
               </li>
