@@ -1,13 +1,22 @@
 import { useEffect } from "react";
-import AOS from "aos";
+// import AOS from "aos";
 
 export default function Sale() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      offset: 200,
-    });
-  }, []);
+  // useEffect(() => {
+  //   // Define different AOS options for smaller screens
+  //   const aosOptions =
+  //     window.innerWidth < 768
+  //       ? {
+  //           duration: 500, // Adjust the duration for smaller screens
+  //           offset: 0, // Adjust the offset for smaller screens
+  //         }
+  //       : {
+  //           duration: 1000, // Default duration
+  //           offset: 200, // Default offset
+  //         };
+
+  //   AOS.init(aosOptions);
+  // }, []);
 
   return (
     <div className="bg-pre py-10 md:py-20">

@@ -11,9 +11,9 @@ const Banner = () => {
   return (
     <>
       {isVisible && (
-        <div className="message-container mt-10 md:mt-[90px] fixed top-[0] font-black text-base text-center text-highlight z-50 w-[100vw] bg-white tracking-widest">
+        <div className="message-container  sticky top-16 lg:top-[8.9vh] font-black text-base text-center text-highlight z-[999] w-[100vw] bg-white tracking-widest">
           <div className="message flex justify-between items-center px-6">
-            <p>
+            <p className="ms-0 md:ms-96">
               Pre-Sale Offer : Pre-Sale ₹1 | Buy Back 0.8 Paisa | Exchange
               listing Price 1.30 Paisa
             </p>

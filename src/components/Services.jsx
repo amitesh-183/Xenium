@@ -1,15 +1,24 @@
 import React, { useEffect } from "react";
 import services from "../styles/services.module.css";
-import AOS from "aos";
+// import AOS from "aos";
 export default function Services() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Specify the duration of the animation (in milliseconds)
-      offset: 200, // Offset (in pixels) from the bottom of the viewport to trigger the animation
-    });
-  }, []);
+  // useEffect(() => {
+  //   // Define different AOS options for smaller screens
+  //   const aosOptions =
+  //     window.innerWidth < 768
+  //       ? {
+  //           duration: 500, // Adjust the duration for smaller screens
+  //           offset: 0, // Adjust the offset for smaller screens
+  //         }
+  //       : {
+  //           duration: 1000, // Default duration
+  //           offset: 200, // Default offset
+  //         };
+
+  //   AOS.init(aosOptions);
+  // }, []);
   return (
-    <div id="services" className="py-12 bg-[#0C134F] lg:pt-24">
+    <div id="services" className="py-12 lg:pt-24">
       <h1 className="sec-title">Services</h1>
       <p
         className=" pb-10 text-center text-2xl px-4 lg:px-80"

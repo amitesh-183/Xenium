@@ -2,17 +2,8 @@ import "../styles/roadmap.css";
 import service1 from "../assets/services/games.webp";
 import service2 from "../assets/services/crypto.webp";
 import service3 from "../assets/services/ludo.png";
-import { useEffect } from "react";
-import AOS from "aos";
 
 export default function Roadmap() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      offset: 200,
-    });
-  }, []);
-
   return (
     <div
       className="bg-[#0C134F] py-10 px-4 md:px-10 lg:px-20 xl:px-64"
@@ -30,7 +21,7 @@ export default function Roadmap() {
           1
         </div>
         <div className="border-4 rounded-full md:mr-8" data-aos="zoom-in-right">
-          <img src={service1} className="w-600" alt="" />
+          <img src={service1} className="w-[200px] md:w-[600px]" alt="" />
         </div>
         <div data-aos="fade-down" data-aos-easing="linear">
           <p className="font-black text-xl"> Fantasy League App </p>
@@ -60,7 +51,7 @@ export default function Roadmap() {
           </p>
         </div>
         <div className="border-4 rounded-full md:ml-8" data-aos="zoom-in-left">
-          <img src={service2} className="w-600" alt="" />
+          <img src={service2} className="w-[200px] md:w-[600px]" alt="" />
         </div>
       </div>
       {/* Service 3 */}
@@ -75,10 +66,10 @@ export default function Roadmap() {
           className="border-4 rounded-full h-[268px] pt-4 md:mr-8"
           data-aos="zoom-in-right"
         >
-          <img src={service3} className=" md:w-600" alt="" />
+          <img src={service3} className="w-[260px] md:w-[600px]" alt="" />
         </div>
         <div
-          className="pt-32 md:pt-0"
+          className="pt-10 md:pt-0"
           data-aos="fade-down"
           data-aos-easing="linear"
         >

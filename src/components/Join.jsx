@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import join from "../assets/join.webp";
-import AOS from "aos";
+// import AOS from "aos";
 const backgroundStyle = {
   backgroundImage: `url(${join})`,
   backgroundSize: "cover",
@@ -9,12 +9,21 @@ const backgroundStyle = {
 };
 
 export default function Join() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1500, // Specify the duration of the animation (in milliseconds)
-      offset: 200, // Offset (in pixels) from the bottom of the viewport to trigger the animation
-    });
-  }, []);
+  // useEffect(() => {
+  //   // Define different AOS options for smaller screens
+  //   const aosOptions =
+  //     window.innerWidth < 768
+  //       ? {
+  //           duration: 500, // Adjust the duration for smaller screens
+  //           offset: 0, // Adjust the offset for smaller screens
+  //         }
+  //       : {
+  //           duration: 1000, // Default duration
+  //           offset: 200, // Default offset
+  //         };
+
+  //   AOS.init(aosOptions);
+  // }, []);
   return (
     <div
       id="join"
@@ -33,7 +42,7 @@ export default function Join() {
           Become a part of our vibrant community and unlock exclusive benefits.
         </p>
         <div className="join-buttons flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 text-center">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300 ease-in-out">
+          <button className=" bg-highlight hover:bg-[#ff4f4f] text-white py-2 px-4 rounded-md transition duration-300 ease-in-out">
             Join Now
           </button>
           <button className="bg-gray-800 hover:bg-gray-900 text-white py-2 px-4 rounded-md transition duration-300 ease-in-out">

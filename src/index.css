@@ -76,8 +76,10 @@ a:hover {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   background-color: var(--background-color);
   color: white;
+  position: relative;
   /* display: flex; */
   /* place-items: center; */
   /* min-width: 320px; */

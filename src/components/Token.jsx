@@ -1,15 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import "aos/dist/aos.css"; // Import AOS CSS
-import AOS from "aos"; // Import AOS library
 
 const Token = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Specify the duration of the animation (in milliseconds)
-      offset: 200, // Offset (in pixels) from the bottom of the viewport to trigger the animation
-    });
-  }, []);
   const [chartData, setChartData] = useState({
     series: [20, 10, 7, 10, 10, 10, 10, 23],
     options: {
@@ -86,7 +78,7 @@ const Token = () => {
   });
 
   return (
-    <div className="py-10 md:py-20 bg-[#0C134F]">
+    <div className="py-10 md:py-20">
       <h1 className="sec-title">Tokens Distributions</h1>
       <div id="chart" className="flex justify-center" data-aos="fade-up">
         <ReactApexChart

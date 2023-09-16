@@ -9,7 +9,19 @@ import "aos/dist/aos.css"; // Import the AOS CSS
 
 function App() {
   useEffect(() => {
-    AOS.init(); // Initialize AOS when the component mounts
+    // Define different AOS options for smaller screens
+    const aosOptions =
+      window.innerWidth < 768
+        ? {
+            duration: 500, // Adjust the duration for smaller screens
+            offset: 0, // Adjust the offset for smaller screens
+          }
+        : {
+            duration: 1000, // Default duration
+            offset: 200, // Default offset
+          };
+
+    AOS.init(aosOptions);
   }, []);
   return (
     <>

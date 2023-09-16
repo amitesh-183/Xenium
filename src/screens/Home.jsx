@@ -22,17 +22,29 @@ export default function Home() {
       {/* Hero-section */}
       <Hero />
       {/* Token-section */}
-      <Token />
+      <div className="bg-[#0C134F]">
+        <Token />
+      </div>
       {/* Roadmap-section */}
-      <Roadmap />
+      <div className="bg-[#0C134F]">
+        <Roadmap />
+      </div>
       {/* Services-section */}
-      <Services />
+      <div className="bg-[#0C134F]">
+        <Services />
+      </div>
       {/* Sale-section */}
-      <Sale />
+      <div className="bg-[#0C134F]">
+        <Sale />
+      </div>
       {/* Contact-section */}
-      <Contact />
+      <div className="bg-[#0C134F]">
+        <Contact />
+      </div>
       {/* Join-section */}
-      <Join />
+      <div className="bg-[#0C134F]">
+        <Join />
+      </div>
       {/* Pre-footer-section */}
       <PreFooter />
       {/* footer-section */}

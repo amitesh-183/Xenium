@@ -2,28 +2,40 @@ import React, { useEffect } from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import vid from "../assets/herovbg.mp4";
 import "aos/dist/aos.css";
-import AOS from "aos";
+// import AOS from "aos";
 
 export default function Hero() {
-  useEffect(() => {
-    AOS.init(); // Initialize AOS
-  }, []);
+  // useEffect(() => {
+  //   // Define different AOS options for smaller screens
+  //   const aosOptions =
+  //     window.innerWidth < 768
+  //       ? {
+  //           duration: 500, // Adjust the duration for smaller screens
+  //           offset: 0, // Adjust the offset for smaller screens
+  //         }
+  //       : {
+  //           duration: 1000, // Default duration
+  //           offset: 200, // Default offset
+  //         };
+
+  //   AOS.init(aosOptions);
+  // }, []);
 
   const scrollDownABit = () => {
     window.scrollBy({
-      top: 900, // Adjust this value to control how much you want to scroll down
+      top: 800, // Adjust this value to control how much you want to scroll down
       behavior: "smooth",
     });
   };
 
   return (
-    <div className="hero-container lg:py-36 py-24 overflow-hidden relative">
+    <div className="hero-container lg:py-40 py-24 overflow-hidden relative">
       {/* Video background */}
       <video
         autoPlay
         loop
         muted
-        className="fixed hidden md:block inset-0 w-full h-[100vh] object-cover -z-10"
+        className="fixed hidden md:flex inset-0 md:w-full object-contain -z-10"
       >
         <source src={vid} type="video/mp4" />
         Your browser does not support the video tag.

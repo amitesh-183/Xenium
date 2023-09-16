@@ -28,9 +28,9 @@ export default function Navbar() {
     };
   }, []);
 
-  const navbarClass = `bg-black fixed z-50 top-0 left-0 w-full px-4 py-2 md:px-20 ${
-    isSticky ? "md:py-3" : ""
-  }`;
+  const navbarClass = `bg-black fixed z-50 top-0 left-0 w-full px-4 py-2 md:px-20 
+  ${isSticky ? "md:py-3" : "py-6"}
+  `;
 
   return (
     <div id="home">
