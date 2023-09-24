@@ -27,7 +27,7 @@
 
   /* color-scheme */
 
-  --background-color: #140533;
+  --background-color: #ffffff;
   --header-color: #f7fff7ff;
   --accent-color: #4ecdc4ff;
   --highlight-color: #ff6b6bff;
@@ -78,7 +78,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: var(--background-color);
-  color: white;
+  color: rgb(0, 0, 0);
   position: relative;
   /* display: flex; */
   /* place-items: center; */

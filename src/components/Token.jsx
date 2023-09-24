@@ -19,6 +19,16 @@ const Token = () => {
         "Airdrop",
         "Backup",
       ],
+      colors: [
+        "#F70253",
+        "#4969f3",
+        "#A68DFB",
+        "#22E54C",
+        "#CCF62F",
+        "#F837F0",
+        "#f3f7a0",
+        "#5DF9DA",
+      ], // Define custom colors for each part of the pie chart
 
       responsive: [
         {
@@ -63,14 +73,14 @@ const Token = () => {
         fontSize: "14px",
         labels: {
           colors: [
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
-            "#fff",
+            "black",
+            "black",
+            "black",
+            "black",
+            "black",
+            "black",
+            "black",
+            "black",
           ],
         },
       },

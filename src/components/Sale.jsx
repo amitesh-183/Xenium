@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 // import AOS from "aos";
+import serv1 from "../assets/services/sale.png";
+import serv2 from "../assets/services/rupee.png";
+import serv3 from "../assets/services/refresh.png";
 
 export default function Sale() {
   // useEffect(() => {
@@ -19,18 +22,20 @@ export default function Sale() {
   // }, []);
 
   return (
-    <div className="bg-pre py-10 md:py-20">
-      <div className="text-shadow bg-slate-300 bg-opacity-40 mx-4 md:mx-20 px-4 md:px-10 lg:px-20 rounded-xl py-8 md:py-10 shadow-black shadow-lg">
+    <div className="py-4">
+      <div className=" mx-4 md:mx-20 px-4 md:px-10 lg:px-20 rounded-xl py-8 md:py-10 ">
         <div data-aos="flip-left">
-          <h1 className="sec-title text-highlight text-center">Pre-Sale</h1>
-          <div className="text-center md:text-left flex flex-col md:flex-row gap-6 justify-center">
-            <div className="text-center md:text-left py-1 px-4 bg-opacity-40 rounded">
+          <h1 className="sec-title text-center">Pre-Sale</h1>
+          <div className="gap-6 flex justify-evenly">
+            <div className="text-center flex flex-col justify-center items-center md:text-left py-1 px-4 bg-opacity-40 rounded">
+              <img src={serv1} width={80} alt="" />
               <p className="text-3xl md:text-4xl font-semibold">Pre-sale</p>
               <p className="font-medium text-accent text-xl md:text-2xl text-shadow">
                 1 rupees
               </p>
             </div>
-            <div className="text-center md:text-left py-1 px-4 bg-opacity-40 rounded">
+            <div className="text-center flex flex-col justify-center items-center md:text-left py-1 px-4 bg-opacity-40 rounded">
+              <img src={serv2} width={80} alt="" />
               <p className="text-3xl md:text-4xl font-semibold">
                 Exchange listing Price
               </p>
@@ -38,7 +43,8 @@ export default function Sale() {
                 1.30 Paisa
               </p>
             </div>
-            <div className="text-center md:text-left py-1 px-4 bg-opacity-40 rounded">
+            <div className=" flex flex-col justify-center items-center py-1 px-4 bg-opacity-40 rounded">
+              <img src={serv3} width={80} alt="" />
               <p className="text-3xl md:text-4xl font-semibold">Buy-back</p>
               <p className="font-medium text-accent text-xl md:text-2xl text-shadow">
                 0.80 Paisa

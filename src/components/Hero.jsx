@@ -29,9 +29,9 @@ export default function Hero() {
   };
 
   return (
-    <div className="hero-container lg:py-40 py-24 overflow-hidden relative">
+    <div className="hero-container mt-20 overflow-hidden relative">
       {/* Video background */}
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -39,20 +39,28 @@ export default function Hero() {
       >
         <source src={vid} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
       {/* Content */}
-      <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" mx-auto py-10 px-4 sm:px-6 lg:px-8 relative z-10">
         <div
           className="max-w-screen-lg mx-auto text-center sticky"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <h2 className="text-2xl md:text-4xl lg:text-6xl font-black mb-6">
-            Unleash the Power of Apps <br />
-            Join our community & experience <br /> the best in app services.
+          <h2 className="text-2xl md:text-4xl lg:text-6xl font-black mt-24">
+            Pre-Sale Exclusive <br /> Grab Your Tokens at Just 1 Rupee!
           </h2>
-          <div
+          <p className=" text-lg py-5 px-20">
+            Are you ready to dive into the future of cryptocurrencies?
+            Don&apos;t miss our exclusive pre-sale offer where you can secure
+            our revolutionary tokens for just 1 Rupee each!
+          </p>
+
+          <button className="bg-highlight text-white text-base md:text-xl px-6 py-3 md:px-10 md:py-4 rounded-lg shadow-md hover:bg-highlight-dark transition duration-300">
+            Get Tokens Now
+          </button>
+          {/* <div
             className="flex flex-col md:flex-row items-center justify-center gap-4"
             data-aos="fade-up"
             data-aos-duration="1500"
@@ -66,9 +74,28 @@ export default function Hero() {
             >
               Learn More
             </button>
-          </div>
-          <div className="flex justify-center text-2xl md:text-3xl pt-8 md:pt-16 animate-bounce">
+          </div> */}
+          {/* <div className="flex justify-center text-2xl md:text-3xl pt-8 md:pt-16 animate-bounce">
             <BsChevronDoubleDown />
+          </div> */}
+        </div>
+        <div className="flex justify-evenly py-8 mt-10">
+          <div className=" bg-cyan-500 bg-opacity-5 border shadow-md shadow-dkBg rounded-xl w-[20rem] flex flex-col items-center gap-4 h-[10rem] py-6 px-4">
+            <h3 className=" text-2xl font-semibold">Lowest Price Ever</h3>
+            <p>
+              At just 1 Rupee, our pre-sale price is an incredible deal you
+              won't find elsewhere.
+            </p>
+          </div>
+          <div className=" bg-cyan-500 bg-opacity-5 border shadow-md shadow-dkBg rounded-xl w-[20rem] flex flex-col items-center gap-4 h-[10rem] py-6 px-4">
+            <h3 className=" text-2xl font-semibold">Early Access</h3>
+            <p>Get a head start before the public listing.</p>
+          </div>
+          <div className=" bg-cyan-500 bg-opacity-5 border shadow-md shadow-dkBg rounded-xl w-[20rem] flex flex-col items-center gap-4 h-[10rem] py-6 px-4">
+            <h3 className=" text-2xl font-semibold">Exclusive Bonuses</h3>
+            <p>
+              Pre-sale participants will enjoy additional benefits and bonuses.
+            </p>
           </div>
         </div>
       </div>

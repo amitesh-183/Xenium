@@ -28,7 +28,7 @@ export default function Navbar() {
   //   };
   // }, []);
 
-  const navbarClass = `bg-black fixed z-50 top-0 mx-auto w-full px-4 py-4 md:px-20 
+  const navbarClass = `bg-black shadow text-white fixed z-50 top-0 mx-auto w-full px-4 py-4 md:px-20 
   `;
 
   return (
@@ -57,7 +57,9 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="md:flex hidden">
-            <button className="bg-highlight">Join Now</button>
+            <button className="hover:bg-highlight border-accent hover:border-highlight">
+              Join Now
+            </button>
           </div>
           <div className="md:hidden">
             <button

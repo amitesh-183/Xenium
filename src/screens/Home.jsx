@@ -16,33 +16,33 @@ export default function Home() {
   return (
     <div>
       <Top />
-      <Banner />
+      {/* <Banner /> */}
       {/* Navbar-section */}
       <Navbar />
       {/* Hero-section */}
       <Hero />
-      {/* Token-section */}
-      <div className="bg-[#0C134F]">
-        <Token />
-      </div>
       {/* Roadmap-section */}
-      <div className="bg-[#0C134F]">
+      <div className="bg-[#ffffff]">
         <Roadmap />
       </div>
+      {/* Token-section */}
+      <div className="bg-[#ffffff]">
+        <Token />
+      </div>
       {/* Services-section */}
-      <div className="bg-[#0C134F]">
+      <div className="bg-[#ffffff]">
         <Services />
       </div>
       {/* Sale-section */}
-      <div className="bg-[#0C134F]">
+      <div className="bg-[#ffffff]">
         <Sale />
       </div>
       {/* Contact-section */}
-      <div className="bg-[#0C134F]">
+      <div className="bg-[#ffffff]">
         <Contact />
       </div>
       {/* Join-section */}
-      <div className="bg-[#0C134F]">
+      <div className="bg-[#ffffff]">
         <Join />
       </div>
       {/* Pre-footer-section */}

@@ -3,7 +3,7 @@ import { SiDiscord, SiTelegram } from "react-icons/si";
 
 export default function PreFooter() {
   return (
-    <div className="lg:py-32 bg-[#0C134F] py-10 px-4 lg:px-14 flex flex-col lg:flex-row justify-center lg:justify-evenly gap-4">
+    <div className="lg:py-32 py-10 px-4 lg:px-14 flex flex-col lg:flex-row justify-center lg:justify-evenly gap-4">
       <div className="company text-center lg:text-left">
         <h1 className="font-bold text-2xl lg:text-3xl pb-4">
           <Link to="/">Xenium</Link>

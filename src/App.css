@@ -6,9 +6,8 @@
 }
 
 .bg-pre {
-  background-image: url("./assets/presale.jpg");
-  background-size: cover;
-  
+  background-image: url("./assets/dazzle.png");
+  background-size: contain;
 }
 
 .text-shadow {
