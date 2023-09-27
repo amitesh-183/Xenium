@@ -1,5 +1,3 @@
-import Apps from "../components/Sale";
-import Banner from "../components/Banner";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";

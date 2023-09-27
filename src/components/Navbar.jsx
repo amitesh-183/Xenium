@@ -1,32 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  // useEffect(() => {
-  //   // Function to handle scroll event
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 100) {
-  //       setIsSticky(true);
-  //     } else {
-  //       setIsSticky(false);
-  //     }
-  //   };
-
-  //   // Attach the event listener
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   // Clean up the event listener when the component unmounts
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   const navbarClass = `bg-black shadow text-white fixed z-50 top-0 mx-auto w-full px-4 py-4 md:px-20 
   `;

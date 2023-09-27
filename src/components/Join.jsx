@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
 import join from "../assets/join.webp";
-// import AOS from "aos";
 const backgroundStyle = {
   backgroundImage: `url(${join})`,
   backgroundSize: "cover",
@@ -9,21 +7,6 @@ const backgroundStyle = {
 };
 
 export default function Join() {
-  // useEffect(() => {
-  //   // Define different AOS options for smaller screens
-  //   const aosOptions =
-  //     window.innerWidth < 768
-  //       ? {
-  //           duration: 500, // Adjust the duration for smaller screens
-  //           offset: 0, // Adjust the offset for smaller screens
-  //         }
-  //       : {
-  //           duration: 1000, // Default duration
-  //           offset: 200, // Default offset
-  //         };
-
-  //   AOS.init(aosOptions);
-  // }, []);
   return (
     <div
       id="join"

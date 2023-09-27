@@ -1,22 +1,5 @@
-import React, { useEffect } from "react";
 import services from "../styles/services.module.css";
-// import AOS from "aos";
 export default function Services() {
-  // useEffect(() => {
-  //   // Define different AOS options for smaller screens
-  //   const aosOptions =
-  //     window.innerWidth < 768
-  //       ? {
-  //           duration: 500, // Adjust the duration for smaller screens
-  //           offset: 0, // Adjust the offset for smaller screens
-  //         }
-  //       : {
-  //           duration: 1000, // Default duration
-  //           offset: 200, // Default offset
-  //         };
-
-  //   AOS.init(aosOptions);
-  // }, []);
   return (
     <div id="services" className="py-12 lg:pt-24">
       <h1 className="sec-title">Services</h1>
@@ -89,24 +72,6 @@ export default function Services() {
                 track market trends, and make informed investment decisions.
               </p>
             </div>
-            {/* <div className={services.service}>
-              <i className="ri-hand-coin-line" />
-              <h3>Blockchain Development</h3>
-              <p>
-                Leverage the power of blockchain technology for transparency and
-                security. Our blockchain development services cover smart
-                contract development and more.
-              </p>
-            </div>
-            <div className={services.service}>
-              <i className="ri-user-5-fill" />
-              <h3>Crypto Consultation</h3>
-              <p>
-                Need guidance in the complex world of cryptocurrencies? Our
-                experts provide consultation services to help you navigate
-                crypto investments and projects.
-              </p>
-            </div> */}
           </div>
         </section>
       </div>

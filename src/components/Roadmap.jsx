@@ -7,6 +7,42 @@ import service3 from "../assets/roadmap/racing-game.jpg";
 import service5 from "../assets/roadmap/trading.jpg";
 
 export default function Roadmap() {
+  const backgroundStyle = {
+    backgroundImage: `url(${service1})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+  const backgroundStyle2 = {
+    backgroundImage: `url(${service2})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+  const backgroundStyle3 = {
+    backgroundImage: `url(${service3})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+  const backgroundStyle4 = {
+    backgroundImage: `url(${service4})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+  const backgroundStyle5 = {
+    backgroundImage: `url(${service5})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+  const backgroundStyle6 = {
+    backgroundImage: `url(${service6})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
   return (
     <div className=" py-10 px-4 md:px-10 lg:px-20 xl:px-64" id="roadmap">
       <div>
@@ -21,14 +57,15 @@ export default function Roadmap() {
           1
         </div>
         <div
-          className=" border-4 rounded-full md:mr-8"
+          className=" border-4 w-[200px] md:w-[600px] h-[200px] md:h-[300px] rounded-full md:mr-8"
           data-aos="zoom-in-right"
+          style={backgroundStyle}
         >
-          <img
+          {/* <img
             src={service1}
             className="w-[200px] md:w-[600px] rounded-full"
             alt=""
-          />
+          /> */}
         </div>
         <div data-aos="fade-down" data-aos-easing="linear">
           <p className="font-black text-xl">
@@ -62,12 +99,16 @@ export default function Roadmap() {
             every match a rewarding experience.
           </p>
         </div>
-        <div className=" border-4 rounded-full md:ml-8" data-aos="zoom-in-left">
-          <img
+        <div
+          className=" border-4 w-[200px] md:w-[540px] h-[200px] md:h-[300px] rounded-full md:ml-8"
+          data-aos="zoom-in-left"
+          style={backgroundStyle2}
+        >
+          {/* <img
             src={service2}
             className="w-[200px] md:w-[600px] md:h-[320px] rounded-full"
             alt=""
-          />
+          /> */}
         </div>
       </div>
       {/* Service 3 */}
@@ -79,14 +120,15 @@ export default function Roadmap() {
           3
         </div>
         <div
-          className=" bg-cover h-[268px] pt-4 md:mr-8"
+          className="rounded-full border-4 w-[200px] md:w-[540px] h-[200px] md:h-[300px] pt-4 md:mr-8"
           data-aos="zoom-in-down"
+          style={backgroundStyle3}
         >
-          <img
+          {/* <img
             src={service3}
-            className="w-[300px] md:w-[600px] h-[300px] md:h-[320px] rounded-full"
+            className="w-[280px] md:w-[600px] h-[300px] md:h-[320px] rounded-full"
             alt=""
-          />
+          /> */}
         </div>
         <div
           className="pt-10 md:pt-0"
@@ -127,12 +169,16 @@ export default function Roadmap() {
             in the crypto landscape.
           </p>
         </div>
-        <div className="  md:mr-8" data-aos="zoom-in-right">
-          <img
+        <div
+          className="rounded-full border-4 w-[200px] md:w-[540px] h-[200px] md:h-[300px]  md:mr-8"
+          data-aos="zoom-in-right"
+          style={backgroundStyle4}
+        >
+          {/* <img
             src={service4}
             className="w-[200px] md:w-[600px] rounded-full"
             alt=""
-          />
+          /> */}
         </div>
       </div>
       {/* Service 5 */}
@@ -143,12 +189,16 @@ export default function Roadmap() {
         >
           5
         </div>
-        <div className={`border-4 rounded-full md:ml-8 data-aos="zoom-in-left`}>
-          <img
+        <div
+          className="border-4 rounded-full md:ml-8 w-[200px] md:w-[540px] h-[200px] md:h-[300px]"
+          data-aos="zoom-in-left"
+          style={backgroundStyle5}
+        >
+          {/* <img
             src={service5}
             className="w-[200px] md:w-[600px] h-[200px] md:h-[320px] bg-cover rounded-full"
             alt=""
-          />
+          /> */}
         </div>
         <div data-aos="fade-down" data-aos-easing="linear">
           <p className="font-black text-xl text-left">
@@ -172,7 +222,7 @@ export default function Roadmap() {
         </div>
 
         <div
-          className="pt-10 md:pt-0 text-right"
+          className=" md:pt-0 text-right"
           data-aos="fade-down"
           data-aos-easing="linear"
         >
@@ -186,12 +236,16 @@ export default function Roadmap() {
             endless entertainment.
           </p>
         </div>
-        <div className=" h-[268px] pt-4 md:mr-8" data-aos="zoom-in-down">
-          <img
+        <div
+          className="rounded-full border-4 w-[200px] md:w-[540px] h-[200px] md:h-[300px] pt-4 md:mr-8"
+          data-aos="zoom-in-down"
+          style={backgroundStyle6}
+        >
+          {/* <img
             src={service6}
             className="w-[260px] md:w-[600px] h-[260px] md:h-[320px] rounded-full"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </div>
