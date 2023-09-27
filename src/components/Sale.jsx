@@ -26,7 +26,7 @@ export default function Sale() {
       <div className=" mx-4 md:mx-20 px-4 md:px-10 lg:px-20 rounded-xl py-8 md:py-10 ">
         <div data-aos="flip-left">
           <h1 className="sec-title text-center">Pre-Sale</h1>
-          <div className="gap-6 flex justify-evenly">
+          <div className="gap-6 flex flex-col md:flex-row justify-evenly">
             <div className="text-center flex flex-col justify-center items-center md:text-left py-1 px-4 bg-opacity-40 rounded">
               <img src={serv1} width={80} alt="" />
               <p className="text-3xl md:text-4xl font-semibold">Pre-sale</p>

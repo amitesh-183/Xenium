@@ -48,16 +48,16 @@ export default function Hero() {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <h2 className="text-2xl md:text-4xl lg:text-6xl font-black mt-24">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-black mt-24">
             Pre-Sale Exclusive <br /> Grab Your Tokens at Just 1 Rupee!
           </h2>
-          <p className=" text-lg py-5 px-20">
+          <p className="hidden md:block text-lg py-5 px-20">
             Are you ready to dive into the future of cryptocurrencies?
             Don&apos;t miss our exclusive pre-sale offer where you can secure
             our revolutionary tokens for just 1 Rupee each!
           </p>
 
-          <button className="bg-highlight text-white text-base md:text-xl px-6 py-3 md:px-10 md:py-4 rounded-lg shadow-md hover:bg-highlight-dark transition duration-300">
+          <button className="bg-highlight text-white text-base md:text-xl px-6 mt-4 md:px-10 md:py-4 rounded-lg shadow-md hover:bg-highlight-dark transition duration-300">
             Get Tokens Now
           </button>
           {/* <div
@@ -79,22 +79,30 @@ export default function Hero() {
             <BsChevronDoubleDown />
           </div> */}
         </div>
-        <div className="flex justify-evenly py-8 mt-10">
-          <div className=" bg-cyan-500 bg-opacity-5 border shadow-md shadow-dkBg rounded-xl w-[20rem] flex flex-col items-center gap-4 h-[10rem] py-6 px-4">
-            <h3 className=" text-2xl font-semibold">Lowest Price Ever</h3>
-            <p>
+        <div className="flex flex-col md:flex-row justify-center items-center md:justify-evenly gap-4 py-8 mt-10">
+          <div className=" bg-cyan-500 border-black bg-opacity-5 border shadow-md shadow-dkBg rounded-xl w-[80%] md:w-[24rem] flex flex-col items-center gap-4 h-[12rem] py-6 px-4">
+            <h3 className=" text-2xl font-semibold underline">
+              Lowest Price Ever
+            </h3>
+            <p className="text-lg text-center">
               At just 1 Rupee, our pre-sale price is an incredible deal you
               won't find elsewhere.
             </p>
           </div>
-          <div className=" bg-cyan-500 bg-opacity-5 border shadow-md shadow-dkBg rounded-xl w-[20rem] flex flex-col items-center gap-4 h-[10rem] py-6 px-4">
-            <h3 className=" text-2xl font-semibold">Early Access</h3>
-            <p>Get a head start before the public listing.</p>
+          <div className=" bg-cyan-500 border-black bg-opacity-5 border shadow-md shadow-dkBg rounded-xl w-[80%] md:w-[24rem] flex flex-col items-center gap-4 h-[12rem] py-6 px-4">
+            <h3 className=" text-2xl font-semibold underline">Early Access</h3>
+            <p className=" text-lg text-center">
+              Enjoy exclusive benefits and be among the first to experience our
+              innovative apps.
+            </p>
           </div>
-          <div className=" bg-cyan-500 bg-opacity-5 border shadow-md shadow-dkBg rounded-xl w-[20rem] flex flex-col items-center gap-4 h-[10rem] py-6 px-4">
-            <h3 className=" text-2xl font-semibold">Exclusive Bonuses</h3>
-            <p>
-              Pre-sale participants will enjoy additional benefits and bonuses.
+          <div className=" bg-cyan-500 border-black bg-opacity-5 border shadow-md shadow-dkBg rounded-xl w-[80%] md:w-[24rem] flex flex-col items-center gap-4 h-[12rem] py-6 px-4">
+            <h3 className=" text-2xl font-semibold underline">
+              Exclusive Bonuses
+            </h3>
+            <p className=" text-lg text-center">
+              Pre-sale participants will enjoy additional benefits, Cryptos and
+              bonuses.
             </p>
           </div>
         </div>

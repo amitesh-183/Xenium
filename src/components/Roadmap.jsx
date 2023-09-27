@@ -31,12 +31,15 @@ export default function Roadmap() {
           />
         </div>
         <div data-aos="fade-down" data-aos-easing="linear">
-          <p className="font-black text-xl"> Fantasy League App </p>
+          <p className="font-black text-xl">
+            {" "}
+            Cricket Battle Game with Voice Calling and Crypto Wins{" "}
+          </p>
           <p className="">
-            Get ready for an immersive sports experience! Our upcoming Fantasy
-            League App will allow you to create your dream team and compete with
-            others in your favorite sports. Stay tuned for exciting leagues,
-            player stats, and more.
+            Engage in thrilling cricket battles like never before with our
+            Cricket Battle Game. Challenge opponents with integrated voice
+            calling while earning real cryptocurrency rewards for your
+            victories.
           </p>
         </div>
       </div>
@@ -49,18 +52,20 @@ export default function Roadmap() {
           2
         </div>
         <div data-aos="fade-down" data-aos-easing="linear">
-          <p className="font-black text-xl text-right"> Crypto Trading App </p>
+          <p className="font-black text-xl text-right">
+            {" "}
+            Fantasy Cricket Game with Crypto Prizes{" "}
+          </p>
           <p className="text-right">
-            The world of cryptocurrency is at your fingertips. We are working on
-            a Crypto Trading App that will enable you to trade and invest in
-            cryptocurrencies effortlessly. Stay updated with real-time market
-            data and make informed investment decisions.
+            Enter the world of fantasy cricket and put your skills to the test.
+            Compete for the chance to win valuable cryptocurrency prizes, making
+            every match a rewarding experience.
           </p>
         </div>
         <div className=" border-4 rounded-full md:ml-8" data-aos="zoom-in-left">
           <img
             src={service2}
-            className="w-[200px] md:w-[600px] h-[260px] rounded-full"
+            className="w-[200px] md:w-[600px] md:h-[320px] rounded-full"
             alt=""
           />
         </div>
@@ -79,7 +84,7 @@ export default function Roadmap() {
         >
           <img
             src={service3}
-            className="w-[600px] md:w-[600px] h-[270px] rounded-full"
+            className="w-[300px] md:w-[600px] h-[300px] md:h-[320px] rounded-full"
             alt=""
           />
         </div>
@@ -88,12 +93,14 @@ export default function Roadmap() {
           data-aos="fade-down"
           data-aos-easing="linear"
         >
-          <p className="font-black text-xl"> Ludo App </p>
+          <p className="font-black text-xl">
+            {" "}
+            Racing Game with Battle and Crypto Rewards{" "}
+          </p>
           <p className="">
-            Bringing classic board gaming into the digital age! Our Ludo App
-            will provide hours of fun and entertainment. Play with friends and
-            family, challenge opponents online, and enjoy a modern twist on a
-            beloved game.
+            Get ready for high-speed action in our Racing Game. Win intense
+            battles on the track and earn cryptocurrency rewards, reminiscent of
+            classic buggy racing games.
           </p>
         </div>
       </div>
@@ -107,15 +114,17 @@ export default function Roadmap() {
         </div>
         <div
           data-aos="fade-down"
-          className="text-right"
+          className="md:text-right"
           data-aos-easing="linear"
         >
-          <p className="font-black text-xl"> Fantasy League App </p>
+          <p className="font-black text-xl">
+            {" "}
+            Blockchain Educator: Your Gateway to Crypto Knowledge{" "}
+          </p>
           <p className="">
-            Get ready for an immersive sports experience! Our upcoming Fantasy
-            League App will allow you to create your dream team and compete with
-            others in your favorite sports. Stay tuned for exciting leagues,
-            player stats, and more.
+            Dive into the world of blockchain education with our all-in-one
+            platform. Learn about this transformative technology and stay ahead
+            in the crypto landscape.
           </p>
         </div>
         <div className="  md:mr-8" data-aos="zoom-in-right">
@@ -127,32 +136,34 @@ export default function Roadmap() {
         </div>
       </div>
       {/* Service 5 */}
-      <div className="flex flex-col-reverse md:flex-row relative justify-center items-center gap-8 my-8 md:my-16">
+      <div className="flex flex-col md:flex-row relative justify-center items-center gap-8 my-8 md:my-16">
         <div
           className="absolute top-0 left-0 rounded-full border-2 border-highlight px-2"
           data-aos="zoom-in-up"
         >
           5
         </div>
-        <div className="border-4 rounded-full md:ml-8" data-aos="zoom-in-left">
+        <div className={`border-4 rounded-full md:ml-8 data-aos="zoom-in-left`}>
           <img
             src={service5}
-            className="w-[200px] md:w-[600px] h-[250px] bg-cover rounded-full"
+            className="w-[200px] md:w-[600px] h-[200px] md:h-[320px] bg-cover rounded-full"
             alt=""
           />
         </div>
         <div data-aos="fade-down" data-aos-easing="linear">
-          <p className="font-black text-xl text-left"> Crypto Trading App </p>
+          <p className="font-black text-xl text-left">
+            {" "}
+            Coins Stand: A New Format for Stock Market Tracking{" "}
+          </p>
           <p className="text-left">
-            The world of cryptocurrency is at your fingertips. We are working on
-            a Crypto Trading App that will enable you to trade and invest in
-            cryptocurrencies effortlessly. Stay updated with real-time market
-            data and make informed investment decisions.
+            Keep track of the stock market with Coins Stand, our innovative app
+            offering a fresh format for monitoring stocks. Stay informed and
+            make informed investment decisions.
           </p>
         </div>
       </div>
       {/* Service 6 */}
-      <div className="flex flex-col md:flex-row relative justify-center items-center gap-8 my-8 md:my-16">
+      <div className="flex flex-col-reverse md:flex-row relative justify-center items-center gap-8 my-8 md:my-16">
         <div
           className="absolute top-0 right-0 rounded-full border-2 border-highlight px-2"
           data-aos="zoom-in-up"
@@ -165,18 +176,20 @@ export default function Roadmap() {
           data-aos="fade-down"
           data-aos-easing="linear"
         >
-          <p className="font-black text-xl"> Ludo App </p>
+          <p className="font-black text-xl">
+            {" "}
+            All-in-One Gaming Platform: Poker, Ludo, Snake, and More{" "}
+          </p>
           <p className="">
-            Bringing classic board gaming into the digital age! Our Ludo App
-            will provide hours of fun and entertainment. Play with friends and
-            family, challenge opponents online, and enjoy a modern twist on a
-            beloved game.
+            Experience the ultimate gaming collection in one platform. Enjoy
+            classics like Poker, Ludo, Snake, and 3 Patti, all designed for
+            endless entertainment.
           </p>
         </div>
         <div className=" h-[268px] pt-4 md:mr-8" data-aos="zoom-in-down">
           <img
             src={service6}
-            className="w-[260px] md:w-[600px] h-[270px] rounded-full"
+            className="w-[260px] md:w-[600px] h-[260px] md:h-[320px] rounded-full"
             alt=""
           />
         </div>

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { SiDiscord, SiTelegram } from "react-icons/si";
+import { SiDiscord, SiInstagram, SiTelegram } from "react-icons/si";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function PreFooter() {
   return (
-    <div className="lg:py-32 py-10 px-4 lg:px-14 flex flex-col lg:flex-row justify-center lg:justify-evenly gap-4">
+    <div className="lg:py-24 bg-gray-800 text-white py-10 px-4 lg:px-14 flex flex-col lg:flex-row justify-center lg:justify-evenly gap-4">
       <div className="company text-center lg:text-left">
         <h1 className="font-bold text-2xl lg:text-3xl pb-4">
           <Link to="/">Xenium</Link>
@@ -13,10 +14,16 @@ export default function PreFooter() {
         </p>
         <ul className="flex gap-4 pt-2 lg:justify-start justify-center">
           <li>
-            <SiDiscord />
+            <SiDiscord className=" text-2xl hover:text-indigo-400 cursor-pointer" />
           </li>
           <li>
-            <SiTelegram />
+            <SiTelegram className=" text-2xl hover:text-blue-400 cursor-pointer" />
+          </li>
+          <li>
+            <FaXTwitter className=" text-2xl hover:text-black cursor-pointer" />
+          </li>
+          <li>
+            <SiInstagram className=" text-2xl hover:text-pink-500 cursor-pointer" />
           </li>
         </ul>
       </div>
@@ -53,7 +60,7 @@ export default function PreFooter() {
           name="email"
           id="email"
           placeholder="Enter your email"
-          className="w-full px-2 py-1 border border-accent outline-none text-white bg-black rounded-full"
+          className="w-full px-2 py-1 border border-accent outline-none text-white rounded-full"
         />
         <button className="mt-2 lg:mt-4 bg-highlight px-4 py-1 rounded-full text-white">
           Subscribe Now

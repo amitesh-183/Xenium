@@ -34,22 +34,23 @@ export default function Services() {
         <section className={services.container}>
           <div className={services.row}>
             <div className={services.service} data-aos="flip-up">
-              <i className="ri-wallet-fill"></i>
-              <h3>Crypto Wallet Development</h3>
+              <i className="ri-gamepad-fill"></i>
+              <h3>Crypto Gaming</h3>
               <p>
-                Securely store, manage, and transact your cryptocurrencies with
-                our custom crypto wallet solutions. We offer user-friendly and
-                highly secure wallet development to safeguard your digital
-                assets.
+                Dive into the world of crypto gaming with our immersive apps.
+                Engage in intense cricket battles, challenge your skills in
+                fantasy cricket, and experience high-speed racing while earning
+                valuable cryptocurrency rewards.
               </p>
             </div>
             <div className={services.service} data-aos="flip-down">
-              <i className="ri-store-3-line" />
-              <h3>Fantasy League Platforms</h3>
+              <i className="ri-graduation-cap-fill"></i>
+              <h3>Blockchain Education</h3>
               <p>
-                Dive into the world of fantasy sports with our state-of-the-art
-                fantasy league platforms. Engage your users with immersive
-                gameplay, real-time stats, and interactive features.
+                Stay informed and ahead of the curve with our comprehensive
+                blockchain education platform. Discover the transformative
+                potential of blockchain technology and unlock new possibilities
+                in the digital landscape.
               </p>
             </div>
             <div className={services.service} data-aos="flip-up">
@@ -80,12 +81,12 @@ export default function Services() {
               </p>
             </div>
             <div className={services.service} data-aos="flip-down">
-              <i className="ri-secure-payment-fill"></i>
-              <h3>Crypto Payment Solutions</h3>
+              <i className="ri-funds-box-fill"></i>
+              <h3>Stock Market Tracking</h3>
               <p>
-                Enhance your e-commerce or online services with crypto payment
-                integration. Our solutions make it easy for customers to pay
-                using cryptocurrencies.
+                Keep your finger on the pulse of the financial world with Coins
+                Stand, our innovative stock market app. Monitor stock prices,
+                track market trends, and make informed investment decisions.
               </p>
             </div>
             {/* <div className={services.service}>

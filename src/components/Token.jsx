@@ -94,7 +94,6 @@ const Token = () => {
         <ReactApexChart
           options={chartData.options}
           series={chartData.series}
-          data-aos="zoom-out-down"
           type="pie"
           width="700" // Set the chart width to 100% for responsiveness
         />
