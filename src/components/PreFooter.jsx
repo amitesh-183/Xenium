@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { SiDiscord, SiInstagram, SiTelegram } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -7,7 +6,7 @@ export default function PreFooter() {
     <div className="lg:py-24 bg-gray-800 text-white py-10 px-4 lg:px-14 flex flex-col lg:flex-row justify-center lg:justify-evenly gap-4">
       <div className="company text-center lg:text-left">
         <h1 className="font-bold text-2xl lg:text-3xl pb-4">
-          <Link to="/">Xenium</Link>
+          <a href="./#home">Xenium</a>
         </h1>
         <p className="text-sm lg:text-base">
           At Xenium, We're Shaping the Future

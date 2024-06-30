@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="logo">
             <h1 className="font-bold text-3xl">
-              <Link to="/">Xenium</Link>
+              <a href="./#home">Xenium</a>
             </h1>
           </div>
           <div className="md:flex hidden">
