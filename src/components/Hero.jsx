@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="hero-container mt-20 overflow-hidden relative">
+    <div className="hero-container mt-20 overflow-hidden relative" id="home">
       <div className=" mx-auto py-10 px-4 sm:px-6 lg:px-8 relative z-10">
         <div
           className="max-w-screen-lg mx-auto text-center sticky"

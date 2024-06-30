@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -23,16 +23,16 @@ export default function Navbar() {
           <div className="md:flex hidden">
             <ul className="nav flex gap-8 uppercase">
               <li>
-                <a href="#home">Home</a>
+                <a href="./#home">Home</a>
               </li>
               <li>
-                <a href="#roadmap">Roadmap</a>
+                <a href="./#roadmap">Roadmap</a>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <a href="./#services">Services</a>
               </li>
               <li>
-                <a href="#contact">Contact Us</a>
+                <a href="./#contact">Contact Us</a>
               </li>
             </ul>
           </div>
